@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEON TECH</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#050907;
+ color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:22px 7%;
+ border-bottom:1px solid #1c3528;
+}
+.logo{color:#39ff88;font-size:25px;font-weight:900}
+nav a{color:#ddd;text-decoration:none;margin-left:18px}
+.hero{
+ min-height:75vh;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ padding:30px 20px;
+ background:radial-gradient(ellipse,#123523 0%,#050907 65%);
+}
+.tag{
+ color:#39ff88;
+ border:1px solid #39ff88;
+ padding:9px 18px;
+ border-radius:30px;
+}
+h1{
+ font-size:clamp(42px,9vw,75px);
+ margin:25px 0 10px;
+}
+h1 span{color:#39ff88}
+.hero p{color:#a5b5aa;font-size:18px}
+button{
+ background:#39ff88;
+ border:0;
+ padding:15px 27px;
+ border-radius:9px;
+ font-weight:bold;
+ margin-top:20px;
+ cursor:pointer;
+ transition:.3s;
+}
+button:hover{transform:scale(1.06);box-shadow:0 0 25px #39ff88}
+section{padding:45px 7%;text-align:center}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:20px;
+ margin-top:30px;
+}
+.card{
+ background:#101a14;
+ border:1px solid #24452f;
+ border-radius:15px;
+ padding:30px 20px;
+ transition:.3s;
+}
+.card:hover{transform:translateY(-7px);border-color:#39ff88}
+.card h3{color:#39ff88}
+.card p{color:#a5b5aa}
+footer{
+ text-align:center;
+ padding:30px;
+ color:#77877c;
+ border-top:1px solid #1c3528;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">NEON TECH</div>
+<nav><a href="#anasayfa">Ana Sayfa</a><a href="#hakkinda">Hakkında</a></nav>
+</header>
+
+<div class="hero" id="anasayfa">
+<div class="tag">⚡ YENİ NESİL TEKNOLOJİ</div>
+<h1>GELECEĞE <span>HOŞ GELDİN</span></h1>
+<p>Kendi dijital dünyanı keşfet.</p>
+<button onclick="document.getElementById('hakkinda').scrollIntoView({behavior:'smooth'})">
+KEŞFET →
+</button>
+</div>
+
+<section id="hakkinda">
+<h2>ÖZELLİKLER</h2>
+<div class="cards">
+<div class="card">
+<h3>💻 Teknoloji</h3>
+<p>Yeni nesil dijital dünyayı keşfet.</p>
+</div>
+<div class="card">
+<h3>🚀 Yenilik</h3>
+<p>Modern tasarım ve yaratıcı fikirler.</p>
+</div>
+<div class="card">
+<h3>🛡️ Güvenlik</h3>
+<p>Güvenli internet kullanımını öğren.</p>
+</div>
+</div>
+</section>
+
+<footer>© 2026 NEON TECH | Yiğit tarafından oluşturuldu ❤️</footer>
+</body>
+</html>
